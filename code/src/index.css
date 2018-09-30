@@ -50,11 +50,12 @@ button {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+
 }
 
  .Product {
    background-color: #fff;
-   width: 16%;
+   width: 180px;
    height: 460px;
    padding: 10px;
    margin-bottom: 10px;
@@ -70,16 +71,14 @@ button {
   margin: 20px auto;
   position: absolute;
   top: 15%;
-  text-align: center;
   object-fit: contain;
   object-position: center;
 }
 
-.description {
-  margin-top: 10px;
-  margin-left: 10px;
-  position: absolute;
+.information {
+  margin: 10px auto 0 15px;
   top: 50%;
+  position: absolute;
   display: flex;
   flex-direction: column;
 }
@@ -89,7 +88,7 @@ button {
   margin-right: auto;
   margin-top: 20px;
   position: absolute;
-  bottom: 20px;
+  bottom: 5%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -98,4 +97,21 @@ button {
 
 .buy p {
   margin-top: 15px;
+}
+
+.Product .slideUp {
+  background-color: #fff;
+  height: 285px;
+  font-size: 28px;
+  line-height: 20px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  left: 0;
+  top: 60px;
+  position: absolute;
+  display: none;
+ }
+
+.Product:hover .slideUp {
+  display: flex;
 }

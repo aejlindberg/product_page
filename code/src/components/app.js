@@ -20,7 +20,8 @@ class App extends React.Component {
             size={product.size}
             numberInPack={product.numberInPack}
             price={product.price}
-            delivery={product.deliveryTime}/>
+            delivery={product.deliveryTime}
+            description={product.description}/>
           }
           )}
         </div>

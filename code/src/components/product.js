@@ -9,8 +9,8 @@ class Product extends React.Component {
     return (
       <div className="Product">
           <h2>{this.props.name}</h2>
-          <img src={this.props.image}/>
-        <div className="description">
+          <img src={this.props.image} alt="product"/>
+        <div className="information">
           <p>&#9733; {this.props.type}</p>
           <p>&#9733; {this.props.substance}</p>
           <p>&#9733; {this.props.size}</p>
@@ -21,8 +21,12 @@ class Product extends React.Component {
           <button>KÖP</button>
           <p>{this.props.delivery}</p>
         </div>
+        <div className="slideUp">
+          <p>{this.props.description}</p>
+        </div>
 
       </div>
+
 
     )
   }
