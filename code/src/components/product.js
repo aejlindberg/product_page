@@ -24,7 +24,6 @@ class Product extends React.Component {
         <div className="slideUp">
           <p>{this.props.description}</p>
         </div>
-
       </div>
 
 

@@ -10,7 +10,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-      <h1>Produkter</h1>
+        <h1>Produkter</h1>
+        <div className="productsNum">
+          <p>Antal produkter {productsJson.products.length}</p>
+        </div>
         <div className="productContainer">
           {productsJson.products.map((product) => {
             return <Product name={product.name.toUpperCase()}
